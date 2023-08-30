@@ -7,3 +7,9 @@
 И случай, бог изобретатель.</br>
 
 1829 г. [А.С.Пушкин](https://habr.com/ru/companies/skillbox/articles/413161/)
+
+### Red Team
+
+### Green Team
+
+### Blue Team
