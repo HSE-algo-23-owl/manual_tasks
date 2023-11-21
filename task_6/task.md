@@ -22,98 +22,146 @@ $$
 
 Порядок матрицы *n* = 8
 
-## 1. Составим формулу рекуррентного соотношения матрицы
+### Blur Team:
 
-Для матрицы:
 $$    
 A =     
  \begin{pmatrix}    
-  -8 & 1 & 0 & \cdots & 0 & 0 \\    
-  15 & -8 & 1 & \cdots & 0 & 0 \\    
-  0 & 15 & -8 & \cdots & 0 & 0 \\    
+  2 & 1 & 0 & \cdots & 0 & 0 \\    
+  1 & 2 & 1 & \cdots & 0 & 0 \\    
+  0 & 1 & 2 & \cdots & 0 & 0 \\    
   \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
-  0 & 0 & 0 & \cdots & -8 & 1 \\    
-  0 & 0 & 0 & \cdots & 15 & -8     
+  0 & 0 & 0 & \cdots & 2 & 1 \\    
+  0 & 0 & 0 & \cdots & 1 & 2     
  \end{pmatrix}    
 $$
 
-Воспользуемся формулой:
+Порядок матрицы *n* = 10
 
-$$ \Delta_{n} =   a \cdot  \Delta_{n-1} - b \cdot  c \cdot   \Delta_{n-2} $$
+### sluggish_pythons Team: 
 
-В матрице видим, что а = -8, b = 15, c = 1. Тогда формула принимает вид:
-
-
-$$ \Delta_{n} =   {-8} \cdot  \Delta_{n-1} - 15 \cdot  1 \cdot   \Delta_{n-2} $$
-
-## 2. Составить характеристическое уравнение:
-
-В общем виде характеристическое уравнение имеет вид:
-
-$\lambda ^ n = -8 \lambda ^ {n-1} + 15 \lambda ^ {n-2}$
-
-После упрощения: 
-
-$\lambda ^ 2 - 8 \lambda + 15 = 0$
-
-Тогда
-
-$$
-\begin{cases}
-\lambda_{1} + \lambda_{2} = -8 \\
-\lambda_{1} \cdot \lambda_{2} = 15 \\
-\end{cases}
+$$    
+A =     
+ \begin{pmatrix}    
+  11 & 2 & 0 & \cdots & 0 & 0 \\    
+  14 & 11 & 2 & \cdots & 0 & 0 \\    
+  0 & 14 & 11 & \cdots & 0 & 0 \\    
+  \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
+  0 & 0 & 0 & \cdots & 11 & 2 \\    
+  0 & 0 & 0 & \cdots & 14 & 11     
+ \end{pmatrix}    
 $$
 
-$\lambda_{1} = -3$
-$\lambda_{2} = -5$
+Порядок матрицы *n* = 12
 
-## 3. Выведем общую формулу нахождения определителя:
+### All ca$h Team: 
 
-Так как $\lambda {1} \neq \lambda {2}$
-
-Формула выглядит следующим образом:
-$\Delta_{n} = C_{1} \cdot (-3) ^ {n} + C_{2} \cdot (-5) ^ n$
-
-Из исходной матрицы находим:
-
-$\Delta_{1} = -8$
-
-$\Delta_{2} = 
-\begin{vmatrix}
--8 & 1\\
-15 & -8
-\end{vmatrix}
-= (-8) \cdot (-8) - 1 \cdot 15 = 49$
-
-Составляем систему:
-
-$$
-\begin{cases}
--3C_{1} - 5C_{2} = -8 \\
-9C_{1} + 25C_{2} = 49 \\
-\end{cases}
+$$    
+A =     
+ \begin{pmatrix}    
+  3 & 2 & 0 & \cdots & 0 & 0 \\    
+  1 & 3 & 2 & \cdots & 0 & 0 \\    
+  0 & 1 & 3 & \cdots & 0 & 0 \\    
+  \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
+  0 & 0 & 0 & \cdots & 3 & 2 \\    
+  0 & 0 & 0 & \cdots & 1 & 3     
+ \end{pmatrix}    
 $$
 
+Порядок матрицы *n* = 7
+
+### TwoPizza Team:
+
+$$    
+A =     
+ \begin{pmatrix}    
+  6 & -3 & 0 & \cdots & 0 & 0 \\    
+  9 & 6 & -3 & \cdots & 0 & 0 \\    
+  0 & 9 & 6 & \cdots & 0 & 0 \\    
+  \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
+  0 & 0 & 0 & \cdots & 6 & -3 \\    
+  0 & 0 & 0 & \cdots & 9 & 6     
+ \end{pmatrix}    
 $$
-\begin{cases}
--9C_{1} - 15C_{2} = -24 \\
-9C_{1} + 25C_{2} = 49 \\
-\end{cases}
+
+Порядок матрицы *n* = 11
+
+### AlgoWizards Team:
+
+$$    
+A =     
+ \begin{pmatrix}    
+  7 & 6 & 0 & \cdots & 0 & 0 \\    
+  2 & 7 & 6 & \cdots & 0 & 0 \\    
+  0 & 2 & 7 & \cdots & 0 & 0 \\    
+  \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
+  0 & 0 & 0 & \cdots & 7 & 6 \\    
+  0 & 0 & 0 & \cdots & 2 & 7     
+ \end{pmatrix}    
 $$
 
-$10C_{2} = 25$
-$C_{2} = 2,5$
-$9C_{1} + 62,5 = 49$
-$C_{1} = -1,5$
+Порядок матрицы *n* = 10
 
-Получаем общую формулу расчета определителя:
+### 1.KLA$ Team:
 
-$\Delta_{n} = (-1,5) \cdot (-3)^n + 2,5 \cdot (-5)^n$
+$$    
+A =     
+ \begin{pmatrix}    
+  10 & 5 & 0 & \cdots & 0 & 0 \\    
+  5 & 10 & 5 & \cdots & 0 & 0 \\    
+  0 & 5 & 10 & \cdots & 0 & 0 \\    
+  \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
+  0 & 0 & 0 & \cdots & 10 & 5 \\    
+  0 & 0 & 0 & \cdots & 5 & 10     
+ \end{pmatrix}    
+$$
 
-Тогда для $n = 8$
+Порядок матрицы *n* = 13
 
-$\Delta_{8} = (-1,5) \cdot (-3)^8 + 2,5 \cdot (-5)^8 = 966721$
- 
+### Cupcakes Team:
 
+$$    
+A =     
+ \begin{pmatrix}    
+  6 & 5 & 0 & \cdots & 0 & 0 \\    
+  1 & 6 & 5 & \cdots & 0 & 0 \\    
+  0 & 1 & 6 & \cdots & 0 & 0 \\    
+  \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
+  0 & 0 & 0 & \cdots & 6 & 5 \\    
+  0 & 0 & 0 & \cdots & 1 & 6     
+ \end{pmatrix}    
+$$
 
+Порядок матрицы *n* = 8
+
+### BB Team:
+
+$$    
+A =     
+ \begin{pmatrix}    
+  4 & 3 & 0 & \cdots & 0 & 0 \\    
+  -4 & 4 & 3 & \cdots & 0 & 0 \\    
+  0 & -4 & 4 & \cdots & 0 & 0 \\    
+  \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
+  0 & 0 & 0 & \cdots & 4 & 3 \\    
+  0 & 0 & 0 & \cdots & -4 & 4     
+ \end{pmatrix}    
+$$
+
+Порядок матрицы *n* = 9
+
+### zavod_dao Team:
+
+$$    
+A =     
+ \begin{pmatrix}    
+  12 & 1 & 0 & \cdots & 0 & 0 \\    
+  20 & 12 & 1 & \cdots & 0 & 0 \\    
+  0 & 20 & 12 & \cdots & 0 & 0 \\    
+  \vdots  & \vdots & \vdots & \ddots & \vdots & \vdots  \\    
+  0 & 0 & 0 & \cdots & 12 & 1 \\    
+  0 & 0 & 0 & \cdots & 20 & 12     
+ \end{pmatrix}    
+$$
+
+Порядок матрицы *n* = 10
