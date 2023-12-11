@@ -52,7 +52,7 @@
 
 T(общ) = 5 +  5 + 17 + 6 + 7 + 6 + 11 + 6 + 9 = 72
 
-T опт = T(общ) / k = 72 / 4 = 18 - длительность работ
+T ср = T(общ) / k = 72 / 4 = 18 - длительность работ
 
 T(max) =  17 
 
@@ -144,7 +144,7 @@ F,B,A,H,I,D
 
 3. Сортируем элементы 2 группы по длительности 2 этапа
 
-G,E,C
+C,E,G
 
 4. Строим диаграмму Ганта
 
@@ -161,9 +161,9 @@ gantt
     H         :a4, after a3, 5h
     I         :a5, after a4, 5h
     D         :a6, after a5, 7h
-    G         :a7, after a6, 6h
+    C         :a7, after a6, 7h
     E         :a8, after a7, 6h
-    C         :a9, after a8, 7h
+    G         :a9, after a8, 6h
     section Конвейер 2
     F         :b1, 01 00:00, 4h
     B         :b2, after b1, 5h
@@ -171,9 +171,9 @@ gantt
     H         :b4, after b3, 9h
     I         :b5, after b4, 7h
     D         :b6, after b5, 8h
-    G         :b7, after b6, 3h
+    C         :b7, after b6, 6h
     E         :b8, after b7, 4h
-    C         :b9, after b8, 6h
+    G         :b9, after b8, 3h
     Окончание выполнения работ : milestone, m2, 03 07:00, 0h
 ```
 Ответ: 55 часов
