@@ -75,7 +75,7 @@ graph RL
 
 ```mermaid
 graph RL
-    a-.->|1|s
+    a-.->|1|s 
     s--->|5|a
     b-.->|7|s
     a-.->|4|b
